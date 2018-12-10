@@ -1,4 +1,4 @@
-package br.com.pablo_henrique.trabalho_professorbruno_n2.Activities;
+package br.com.pablo_henrique.trabalho_professorbruno_n2.activities;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -16,8 +16,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onClick(View view) {
-        Intent intent = null;
 
+        // chama a proxima tela
+        Intent intent = null;
         switch (view.getId()){
             case R.id.btnTodos:
                 intent = new Intent(this, TodosActivity.class);

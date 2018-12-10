@@ -1,4 +1,4 @@
-package br.com.pablo_henrique.trabalho_professorbruno_n2.Adapter;
+package br.com.pablo_henrique.trabalho_professorbruno_n2.adapter;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 
 import java.util.List;
 
-import br.com.pablo_henrique.trabalho_professorbruno_n2.Model.UserModel;
+import br.com.pablo_henrique.trabalho_professorbruno_n2.model.UserModel;
 import br.com.pablo_henrique.trabalho_professorbruno_n2.R;
 
 public class Adapter_users extends RecyclerView.Adapter {
@@ -24,31 +24,23 @@ public class Adapter_users extends RecyclerView.Adapter {
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(context).inflate(R.layout.item_user, parent, false);
-
         UsersViewHolder holder = new UsersViewHolder(view);
-
         return holder;
     }
-
-
 
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder viewHolder, int position) {
         UsersViewHolder holder = (UsersViewHolder) viewHolder;
-
         UserModel user = users.get(position);
-
         holder.name.setText(user.getName());
         holder.username.setText(user.getUsername());
         holder.phone.setText(user.getPhone());
         holder.email.setText(user.getEmail());
         holder.website.setText(user.getWebsite());
-
     }
 
     @Override
     public int getItemCount() {
-
         return users.size();
     }
 }

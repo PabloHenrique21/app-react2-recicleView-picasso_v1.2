@@ -1,4 +1,4 @@
-package br.com.pablo_henrique.trabalho_professorbruno_n2.Adapter;
+package br.com.pablo_henrique.trabalho_professorbruno_n2.adapter;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.View;

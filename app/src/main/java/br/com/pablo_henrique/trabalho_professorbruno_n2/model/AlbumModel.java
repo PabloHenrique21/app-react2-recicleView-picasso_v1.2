@@ -1,4 +1,4 @@
-package br.com.pablo_henrique.trabalho_professorbruno_n2.Model;
+package br.com.pablo_henrique.trabalho_professorbruno_n2.model;
 
 public class AlbumModel {
     private Integer id;
